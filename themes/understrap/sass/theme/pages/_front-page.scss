@@ -1,0 +1,49 @@
+ul.nav li.dropdown:hover ul.dropdown-menu {
+display: block;
+}
+
+body.home {
+    background-color: $pink;
+
+    main {
+        section {
+            background-color: rgba(black, 0.4);
+            box-shadow: 0 0 6.6px 0 rgba(0,0,0,.1);
+            .home-tall {
+                height:400px;
+                align-items: center;
+                display: flex;
+                padding-left: 20px;
+                padding-right: 20px;
+                // margin-bottom: 30px;
+                &.headline {
+                    height:500px;
+                    &.purple {
+                        animation: colorchangepurple 10s infinite;
+                        -webkit-animation: colorchangepurple 10s infinite;
+                        @keyframes colorchangepurple
+                        {
+                          0%   {background: $purple;}
+                          25%  {background: lighten($purple, 5%);}
+                          50%  {background: $purple;}
+                          75%  {background: darken($purple, 5%);}
+                          100% {background: $purple;}
+                        }
+                    }
+                    &.pink {
+                        animation: colorchange 10s infinite;
+                        -webkit-animation: colorchange 10s infinite;
+                        @keyframes colorchange
+                        {
+                          0%   {background: $pink;}
+                          25%  {background: lighten($pink, 5%);}
+                          50%  {background: $pink;}
+                          75%  {background: darken($pink, 5%);}
+                          100% {background: $pink;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

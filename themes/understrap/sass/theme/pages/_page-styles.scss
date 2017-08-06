@@ -1,0 +1,123 @@
+// Some colors to get started
+
+$purple : #473648;
+$pink : #d72fc4;
+
+h1 {
+    font-size: 3.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+        text-decoration: none;
+    }
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.purple {
+    background-color: $purple;
+    transition: 0.3s all ease-in-out;
+    // box-shadow: 0px 0px 1px 2px $purple;
+
+    h1, h2, p {
+        padding-bottom: 20px;
+        border-bottom: 2px solid $pink;
+        transition: 0.3s all ease-in-out;
+    }
+}
+.pink {
+    background-color: $pink;
+    transition: 0.3s all ease-in-out;
+    // box-shadow: 0px 0px 1px 2px $pink;
+
+    h1, h2, p {
+        padding-bottom: 18px;
+        border-bottom: 2px solid $purple;
+        transition: 0.3s all ease-in-out;
+    }
+}
+
+body {
+    .wrapper {
+        > #content {
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+            margin-top:0 !important;
+            margin-bottom:0 !important;
+        }
+    }
+
+    #right-sidebar {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    main {
+        padding-top: 0px;
+        padding-bottom: 0px;
+
+        section.product-preview {
+            background-color: $pink !important;
+            box-shadow: 0 0 6.6px 0 rgba(0,0,0,.1);
+
+            .product-preview-title {
+                padding: 30px 20px;
+                // margin-bottom: 30px;
+                h2 {
+                    padding: 10px;
+                }
+            }
+            .product-preview-wrapper {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+                // margin-bottom: 30px;
+                // border: 1px solid transparent;
+                transition: 0.3s all ease-in-out;
+                p {
+                    margin-bottom: 0;
+                }
+                .product-preview-image {
+                    padding: 4px;
+                    .product-preview-image-overlay {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin-left: 15px;
+                        margin-right: 15px;
+                        padding-bottom: 30px;
+                        background-color: rgba(215,47,196,0);
+                        transition: 0.3s all ease-in-out;
+                    }
+                }
+                .product-preview-text {
+                    color: $pink;
+                    padding: 4px;
+                }
+                &:hover {
+                    background-color: $purple;
+                    // box-shadow: 0px 0px 1px 2px $purple;
+                    transition: 0.3s all ease-in-out;
+                    // border: 1px solid rgba(101, 22, 92, 0.29);
+                    .product-preview-image-overlay {
+                        // background-color: rgba(202,153,196,0.3);
+                    }
+                    .product-preview-text {
+                        color: #ec7cc8;
+                    }
+                }
+            }
+        }
+    }
+}

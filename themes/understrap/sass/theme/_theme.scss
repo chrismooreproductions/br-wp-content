@@ -1,0 +1,21 @@
+html {
+    body {
+        .wrapper {
+            padding: 0 0;
+            color: #fff;
+            background-color: rgba(0,0,0,0.16);
+            #header {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            #content {
+                padding-top: 15px;
+                padding-bottom: 15px;
+                margin-bottom: 64px;
+            }
+            section {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
